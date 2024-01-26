@@ -33,5 +33,5 @@ Check if these programs are already installed in your OS (and install them, if n
 
 ### Appium server
 
-1. Follow the [instructions](https://appium.io/docs/en/about-appium/getting-started/?lang=en) from the official website.
+1. Follow the [instructions](https://appium.io/docs/en/2.2/quickstart/install/) from the official website.
 

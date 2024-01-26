@@ -18,10 +18,10 @@ All the instructions to use the toolkit are inside the [docs / usage](docs/usage
 
 ## Quick Start
 
-1. Connect an Android Smartphone to a PC and type `adb devices`
-    - Save the `udid` (`device_id`) of the device
+1. Launch the emulator and type `adb devices`
+    - Save the `udid` (`device_id`) of the device (it should be `emulator-5554`)
 2. Open a new terminal and start Appium
-    - `appium -p 4723`
+    - `appium --base-path /wd/hub -p 4723`
 3. Open a new terminal and start QRCodeGenerator
     - `cd tools/QRCodeGenerator`
     - `python main.py -a <app> -j <json_data_path> -p <position>`

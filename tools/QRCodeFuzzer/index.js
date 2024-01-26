@@ -12,10 +12,10 @@ const opts = {
   port: loader.fuzz_port(), // 4723,
   capabilities: {
     "platformName": "Android",
-    "appPackage": appIns.app_package,
-    "appActivity": appIns.app_activity,
-    "automationName": "UiAutomator2",
-    "noReset": "true"
+    "appium:appPackage": appIns.app_package,
+    "appium:appActivity": appIns.app_activity,
+    "appium:automationName": "UiAutomator2",
+    "appium:noReset": "true"
   }
 };
 

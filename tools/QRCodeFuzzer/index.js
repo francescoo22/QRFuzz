@@ -15,7 +15,8 @@ const opts = {
     "appium:appPackage": appIns.app_package,
     "appium:appActivity": appIns.app_activity,
     "appium:automationName": "UiAutomator2",
-    "appium:noReset": "true"
+    "appium:autoGrantPermissions": "true",
+    // "appium:noReset": "true"
   }
 };
 

@@ -6,14 +6,15 @@ class Inspector {
     async goToScan(driver) {
     	let ok = await driver.findElement("id", 'posteitaliane.posteapp.apppostepay:id/second_bt');
         await driver.elementClick(ok.ELEMENT);
-
         await driver.pause(1000);
 
-        // TODO: instructions for the page that appears only the first time
-        
+     
     	let scan = await driver.findElement("id", 'posteitaliane.posteapp.apppostepay:id/access_qr');
         await driver.elementClick(scan.ELEMENT);
-       
+        await driver.pause(1000);
+        
+        let ok2 = await driver.findElement("id", 'posteitaliane.posteapp.apppostepay:id/customDrawMeButton');
+        await driver.elementClick(ok2.ELEMENT);
     }
 
     async getResultView(driver) {

@@ -142,4 +142,3 @@ dmypy.json
 # QRCodeFuzzer
 tools/QRCodeFuzzer/data-tests/**
 !tools/QRCodeFuzzer/data-tests/app-example/
-tools/QRCodeFuzzer/inspectors/credentials.json

@@ -109,8 +109,9 @@ async function goToAppScanPage(driver) {
     await appIns.goToScan(driver);
   } catch (error) {
     console.log("[QRCodeFuzzer] Unable to go to the scan page (error: " + error + ")");
-    console.log("[QRCodeFuzzer] Please place the App manually in the scan page; then press any key to continue...");
-    await keypress();
+    console.log("[QRCodeFuzzer] Please place the App manually in the scan page");
+    // Just loop until manual intervention
+    await goToAppScanPage(driver);
   }
 }
 
